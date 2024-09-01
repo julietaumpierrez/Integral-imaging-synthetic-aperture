@@ -18,9 +18,9 @@ Para empezar se necesitan dos softwares instalados en la computadora que va a co
 
 El segundo software es uno para mover los motores sin codigo, este sirve para chequear que los motores funcionan para eso hay que conectar el cable de arduino a la compu y la fuente a la electricidad. En este software algunas veces hay que indicarle en que puerto se conecto el arduino. Se puede descargar de [este link](https://drive.google.com/file/d/12w0aJEAhwovQf3WCCmGwqNnhMwnoQ3hO/view). 
 
-Motores y Arduino:  Todo se basa en [este video](https://www.youtube.com/watch?v=zUb8tiFCwmk) que en la descripcion te da el código para mover los motores, en resumen tenes que instalar la libreria GRBL de [este link](https://drive.google.com/file/d/12w0aJEAhwovQf3WCCmGwqNnhMwnoQ3hO/view) para poder mandarle el codigo Arduino. 
+**Motores y Arduino**:  Todo se basa en [este video](https://www.youtube.com/watch?v=zUb8tiFCwmk) que en la descripcion te da el código para mover los motores, en resumen tenes que instalar la libreria GRBL de [este link](https://drive.google.com/file/d/12w0aJEAhwovQf3WCCmGwqNnhMwnoQ3hO/view) para poder mandarle el codigo Arduino. 
 
-Python y camara: Para eso hay que usar [PySpin](https://pypi.org/project/EasyPySpin/), acá recuerdo haber tenido problemas de Wheel por la version de Windows, se soluciono embocandole a la version correcta pero no fue sencillo encontrarla. PySpin lo que hace es sacar la foto a traves de Python. También es necesario PySerial para hacer la comunicación serial, esa se instala con pip sin problema.
+**Python y camara**: Para eso hay que usar [PySpin](https://pypi.org/project/EasyPySpin/), acá recuerdo haber tenido problemas de Wheel por la version de Windows, se soluciono embocandole a la version correcta pero no fue sencillo encontrarla. PySpin lo que hace es sacar la foto a traves de Python. También es necesario PySerial para hacer la comunicación serial, esa se instala con pip sin problema.
 
 ### Instalación:
 
