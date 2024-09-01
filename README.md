@@ -4,9 +4,9 @@ Repositorio con todo el material generado a lo largo de mi pasantía en el labor
 ## Estructura del repo
 
 Hay varias carpetas que pueden tener cosas de utilidad:
-- Documentos: Carpeta que tiene informes presentados para validar la pasantía como pasantía de Ing. Electrica, informe presentado a PEDECIBA, poster de IdM y poster presentado en el Workshop on Adaptive Compressive and Computational Imaging 2022. 
+- Documentos: Carpeta que tiene informes presentados para validar la pasantía como pasantía de Ing. Electrica, informe presentado a PEDECIBA, poster de IdM y poster presentado en el Workshop on Adaptive Compressive and Computational Imaging 2022. También hay un pdf que se llama links que es todo lo que acumule en el desarrollo de todo esto, puede servir para hacer troubleshooting en algun caso.
 - Código: Esta carpeta tiene los archivos necesarios para utilizar la estructura que saca fotos mientras mueve la camara.
-- Notebooks: Notebooks generados para realizar el procesamiento de las imagenes integrales. 
+- Notebooks: Notebooks generados para realizar el procesamiento de las imagenes integrales. Este codigo no esta del todo prolijo pero puede servir como punto de partida para procesar las imagenes. 
 
 ## Funcionamiento:
 
@@ -14,7 +14,7 @@ La idea es que desde python se controla la camara y se le avisa al Arduino x pue
 
 ## Instrucciones de uso:
 
-Para empezar se necesitan dos softwares instalados en la computadora que va a correr los programas. El primero es el software asociado a la cámara que se puede descargar de [este link](#FIXME)Es plug and play, es decir una vez que se conecta la camara el software la capta directamente y te permite tomar fotos ahí mismo. SIEMPRE hay que conectar la camara y abrir este software, si no los siguientes pasos no funcionan. 
+Para empezar se necesitan dos softwares instalados en la computadora que va a correr los programas. El primero es el software asociado a la cámara que se puede descargar de [este link](https://www.flir.com/products/spinnaker-sdk/). Es plug and play, es decir una vez que se conecta la camara el software la capta directamente y te permite tomar fotos ahí mismo. SIEMPRE hay que conectar la camara y abrir este software, si no los siguientes pasos no funcionan. 
 
 El segundo software es uno para mover los motores sin codigo, este sirve para chequear que los motores funcionan para eso hay que conectar el cable de arduino a la compu y la fuente a la electricidad. En este software algunas veces hay que indicarle en que puerto se conecto el arduino. Se puede descargar de [este link](https://drive.google.com/file/d/12w0aJEAhwovQf3WCCmGwqNnhMwnoQ3hO/view). 
 
@@ -31,9 +31,15 @@ Python y camara: Para eso hay que usar [PySpin](https://pypi.org/project/EasyPyS
 ### Uso:
 
 1. Conectar la camara y abrirla con el SDK si se ve todo OK cerrar el programa.
-2. Conectar el Arduino y mandarle el programa #FIXME: Agregar nombre.
-3. Activar el ambiente virtual desde una terminal y correr el programa #FIXME: Agregar nombre.
+2. Conectar el Arduino y mandarle el programa Movement.ino .
+3. Activar el ambiente virtual desde una terminal y correr el programa Acquisition.py.
 4. Dar OK en la terminal para que comience a tomar imágenes.
+
+## Comentarios:
+
+Todo lo anterior esta chequeado que funciona para Windows 10. La parte mas compleja es la de la instalación de PySpin, lo otro debería funcionar bastante directo.
+
+Sobre la estructura hay que tratarla con cariño, para mover los motores al comienzo todo tiene que estar desconectadoy se mueven las guias respectivas, algunas veces pueden quedar desalineadas y si eso sucede el movimiento de los motores va a andar mal. Los motores agarran temperatura, se la bancan bien pero algunas veces por precaución entre toma y toma (si estas fueron largas) es mejor desconectar todo y esperar a que baje la temperatura. 
 
 ## Contacto
 
